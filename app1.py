@@ -36,4 +36,9 @@ def meaning(w):
 
 word = input("Please enter a word.\n")
 
-print(meaning(word))
+output = meaning(word)
+if type(output) == list:
+    for item in output:
+        print(item)
+else:
+    print(output)
